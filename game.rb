@@ -23,7 +23,7 @@ class Game
   private
   def game_over
     print "game over, "
-    puts board.winner ? "#{board.winner} win!" : "it's a draw!"
+    puts board.winner ? "#{board.winner} win!" : "draw!"
   end
   def invalid_move?(pos)
     pos.nil? || board[pos]
